@@ -4,47 +4,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css animation study</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <h1>
         css animation study
     </h1>
 
+    <section class="content">
 
-    <h3>
-        <a href="./shining-loading/">
-            > Shining Loading
-        </a>
-    </h3>
-    <p>
-        <a href="https://www.youtube.com/watch?v=Xrx9v6DhzDo&ab_channel=Errichto2" target="_blank">
-            참고 영상
-        </a>
-    </p>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card-upper">
+                        <h2 class="card-title">
+                            Shining Loading
+                        </h2>
+                    </div>
 
-    <h3>
-        <a href="./bouncing-ball/">
-            > Bouncing Ball
-        </a>
-    </h3>
-    <p>
-        <a href="https://www.youtube.com/watch?v=sLCiI6d5vTM&ab_channel=ChristianLifeChurch" target="_blank">
-            참고 영상
-        </a>
-    </p>
+                    <img class = "card-img" src="./img/shining-loading.gif" alt="">
+                    <div class="card-button-container">
+                        <div>
+                            <a class = "neon-button" href="./shining-loading/">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                보러가기
+                            </a>
+                        </div>
+                        <div>
+                            <a class = "neon-button" href="https://www.youtube.com/watch?v=Xrx9v6DhzDo&ab_channel=Errichto2" target="_blank">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                참고 영상
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-    <h3>
-        <a href="./neon-button/">
-            > Neon-Button
-        </a>
-    </h3>
-    <p>
-        <a href="https://www.youtube.com/watch?v=ex7jGbyFgpA&ab_channel=OnlineTutorials" target="_blank">
-            참고 영상
-        </a>
-    </p>
+                <div class="swiper-slide">
+                    <div class="card-upper">
+                        <h2 class="card-title">
+                            Bouncing Ball
+                        </h2>
+                    </div>
 
+                    <img class = "card-img" src="./img/bouncing-ball.gif" alt="">
+                    <div class="card-button-container">
+                        <div>
+                            <a class = "neon-button" href="./bouncing-ball/">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                보러가기
+                            </a>
+                        </div>
+                        <div>
+                            <a class = "neon-button" href="https://www.youtube.com/watch?v=sLCiI6d5vTM&ab_channel=ChristianLifeChurch" target="_blank">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                참고 영상
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card-upper">
+                        <h2 class="card-title">
+                            Neon-Button
+                        </h2>
+                    </div>
+
+                    <img class = "card-img" src="./img/neon-button.gif" alt="">
+                    <div class="card-button-container">
+                        <div>
+                            <a class = "neon-button" href="./neon-button/">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                보러가기
+                            </a>
+                        </div>
+                        <div>
+                            <a class = "neon-button" href="https://www.youtube.com/watch?v=ex7jGbyFgpA&ab_channel=OnlineTutorials" target="_blank">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                참고 영상
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
     
-
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,    
+            loop: true,
+            slidesPerView: 'auto',
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            coverflowEffect: {
+                rotate: 20,
+                stretch: 10,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+          });
+    </script>
 </body>
+
 </html>

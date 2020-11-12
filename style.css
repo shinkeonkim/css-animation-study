@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 a {
@@ -10,6 +11,148 @@ a {
 }
 
 body {
-    background-color: #a04f4f;
+    background-color:  #19272c;
     color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.swiper-container {
+    min-width: 80%;
+    height: fit-content;
+}
+
+.card-title {
+    text-align: center;
+    padding-top: 2vh;
+}
+/* 
+.card-title::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100px;
+    height: 1px;
+    background-color: white;
+} */
+
+
+.card-img {
+    display: flex;
+    justify-self: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40vh;
+    max-width: 90%;
+}
+
+.card-button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.card-button-container button  {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+
+a {
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    margin: 5px 10px 5px 10px;
+    color: skyblue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #11538c;
+    background: skyblue;
+    box-shadow: 0 0 10px skyblue,
+                0 0 20px skyblue,
+                0 0 30px skyblue,
+                0 0 40px skyblue;
+    transition-delay: 0.8s;
+}
+
+a.neon-button span {
+    position: absolute;
+    display: block;
+}
+
+a.neon-button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, skyblue);
+}
+
+a.neon-button:hover span:nth-child(1) {
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, transparent, skyblue);
+    transition: 0.8s;
+}
+
+
+a.neon-button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, skyblue);
+}
+
+a.neon-button:hover span:nth-child(2) {
+    top: 0;
+    background: linear-gradient(180deg, transparent, skyblue);
+    transition: 0.8s;
+    transition-delay: 0.2s;
+}
+
+
+a.neon-button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, skyblue);
+}
+
+a.neon-button:hover span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(270deg, transparent, skyblue);
+    transition: 0.8s;
+    transition-delay: 0.4s;
+}
+
+
+a.neon-button span:nth-child(4) {
+    left: 0;
+    bottom: -100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, skyblue);
+}
+
+a.neon-button:hover span:nth-child(4) {
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, transparent, skyblue);
+    transition: 0.8s;
+    transition-delay: 0.6s;
 }
